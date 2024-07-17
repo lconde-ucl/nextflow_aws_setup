@@ -8,18 +8,18 @@ source ~/.bash_profile # to reset tower credentials
 #- hello_2 pipeline
 #------------------
 
-nextflow run lconde-ucl/hello_2 -r main --outdir results -with-tower -profile local
-nextflow run lconde-ucl/hello_2 -r main --outdir results -with-tower -profile myriad
-nextflow run lconde-ucl/hello_2 -r main --outdir results -with-tower -profile aws
+nextflow run lconde-ucl/hello_2 -r main --outdir results_hello -with-tower -profile local
+nextflow run lconde-ucl/hello_2 -r main --outdir results_hello -with-tower -profile myriad
+nextflow run lconde-ucl/hello_2 -r main --outdir results_hello -with-tower -profile aws
 nextflow run lconde-ucl/hello_2 -r main --outdir s3://lconde-nf-bucket/results -with-tower -profile aws
 
 
 #- nf-core/demo pipeline (does not need a genome)
 #------------------------------------------------
 
-nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile local
-nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile myriad
-nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile aws
+nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results_demo -with-tower -profile local
+nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results_demo -with-tower -profile myriad
+nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results_demo -with-tower -profile aws
 
 
 #--------------------------------
