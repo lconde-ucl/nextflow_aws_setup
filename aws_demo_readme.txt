@@ -19,7 +19,7 @@ nextflow run lconde-ucl/hello_2 -r main --outdir s3://lconde-nf-bucket/results -
 
 nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile local
 nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile myriad
-#nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile aws
+nextflow run nf-core/demo --input ./param_files/samplesheet_demo.csv --outdir results -with-tower -profile aws
 
 
 #--------------------------------
