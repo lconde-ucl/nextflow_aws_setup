@@ -1,0 +1,10 @@
+# These are the defaults:
+#
+#outdir: 's3://lconde-tower-bucket/rnaseq/results'
+#igenomes_base: 's3://lconde-igenomes/igenomes'
+#genome: 'GRCh38'
+
+input: 'https://raw.githubusercontent.com/lconde-ucl/test_datasets/main/samplesheet_rnaseq.csv'
+outdir: 'results_github'
+igenomes_base: 's3://lconde-igenomes/igenomes'
+genome: 'GRCh38'
